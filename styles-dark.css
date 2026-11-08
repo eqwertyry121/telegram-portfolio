@@ -132,6 +132,8 @@ h1, h2, p { margin: 0; }
 .work-sequence span { font-size: 13px; }
 
 @media (min-width: 761px) {
+  .topbar { justify-content: space-between; }
+  .top-contact { margin-left: auto; }
   .hero-poster { min-height: min(620px, calc(100svh - 100px)); }
   .hero-copy { padding: clamp(36px, 4vw, 60px); }
   .hero h1 { margin: 24px 0 20px; }
