@@ -32,7 +32,7 @@ h1, h2, p { margin: 0; }
 .nav a, .top-contact { font-size: 12px; font-weight: 700; text-decoration: none; }
 .nav a { color: #b3b7b5; padding: 8px 0; transition: color .2s; }
 .nav a:hover { color: #fff; }
-.top-contact { display: inline-flex; justify-content: space-between; align-items: center; gap: 28px; min-width: 136px; padding: 13px 16px; border: 1px solid #575b59; transition: border-color .2s, background .2s; }
+.top-contact { display: inline-flex; justify-content: space-between; align-items: center; gap: 28px; min-width: 136px; margin-left: auto; padding: 13px 16px; border: 1px solid #575b59; transition: border-color .2s, background .2s; }
 .top-contact:hover { border-color: var(--red); background: #1b1111; }
 .top-contact span { color: var(--red); font-size: 18px; line-height: 1; }
 
