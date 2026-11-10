@@ -219,3 +219,21 @@ h1, h2, p { margin: 0; }
   .intro-bottom > p:first-child, .work-text p, .footer-description, .method-content p:first-child, .method-note p { font-size: 16px; }
   .method-number, .method-short, .method-content .metric, .work-sequence span { font-size: 14px; }
 }
+
+/* Center the work section and make supporting copy easier to read. */
+.work { display: block; }
+.work-main { max-width: 820px; margin: 0 auto; text-align: center; }
+.work-text { max-width: 760px; margin-left: auto; margin-right: auto; }
+.work-sequence { width: fit-content; max-width: 100%; margin-left: auto; margin-right: auto; justify-content: center; }
+.hero-copy > p, .intro-bottom > p:first-child, .work-text p, .footer-description, .method-content p:first-child, .method-note p { font-size: clamp(18px, 1.25vw, 20px); }
+.top-contact, .hero-secondary, .footer-button { font-size: 17px; }
+.method-number, .method-short, .method-content .metric, .work-sequence span { font-size: 16px; }
+.progress-strip-status { font-size: clamp(16px, 1.4vw, 20px); }
+.progress-strip-status span:last-child { font-size: 15px; }
+.footer-kicker { font-size: 16px; }
+@media (max-width: 760px) {
+  .hero-copy > p, .intro-bottom > p:first-child, .work-text p, .footer-description, .method-content p:first-child, .method-note p { font-size: 17px; }
+  .method-number, .method-short, .method-content .metric, .work-sequence span { font-size: 15px; }
+  .progress-strip-status { font-size: clamp(14px, 3.8vw, 17px); letter-spacing: 0; }
+  .progress-strip-status span:first-child { white-space: normal; text-align: center; }
+}
