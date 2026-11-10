@@ -196,3 +196,13 @@ h1, h2, p { margin: 0; }
 @media (max-width: 600px) {
   .progress-strip-status span:last-child { display: none; }
 }
+
+/* Center the introduction while keeping the section label in place. */
+.intro-copy { text-align: center; }
+.intro-bottom { display: flex; justify-content: center; }
+.intro-bottom > p:first-child { max-width: 580px; }
+@media (min-width: 761px) {
+  .intro { position: relative; display: block; }
+  .intro > .section-index { position: absolute; left: var(--pad); }
+  .intro-copy { transform: none; }
+}
