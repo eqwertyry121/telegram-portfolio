@@ -206,3 +206,16 @@ h1, h2, p { margin: 0; }
   .intro > .section-index { position: absolute; left: var(--pad); }
   .intro-copy { transform: none; }
 }
+
+/* Readable supporting text across the site. */
+.hero-copy > p { color: #f0f1ed; font-size: clamp(17px, 1.15vw, 19px); }
+.intro-bottom > p:first-child, .work-text p, .footer-description, .method-content p:first-child { color: #e0e3df; font-size: 18px; }
+.method-number, .method-short, .method-content .metric, .work-sequence span { color: #d8dcd9; font-size: 15px; }
+.method[open] .method-number { color: #ff7770; }
+.method-note p { color: #e2e5e2; font-size: 18px; }
+@media (min-width: 761px) { .work-main { grid-column: 2; } }
+@media (max-width: 760px) {
+  .hero-copy > p { font-size: 17px; }
+  .intro-bottom > p:first-child, .work-text p, .footer-description, .method-content p:first-child, .method-note p { font-size: 16px; }
+  .method-number, .method-short, .method-content .metric, .work-sequence span { font-size: 14px; }
+}
